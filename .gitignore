@@ -1,6 +1,6 @@
 .stack-work/*
 *.swp
 stack.yaml.lock
-tslsat
-tslfuzz
-tsl2bsa
+/tslsat
+/tslfuzz
+/tsl2bsa
