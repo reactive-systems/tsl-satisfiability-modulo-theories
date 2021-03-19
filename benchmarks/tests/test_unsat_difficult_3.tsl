@@ -1,0 +1,7 @@
+initially guarantee {
+    p x;
+    p (f x);
+    [x <- f x];
+    X G [x <- x];
+    X F ! (p x)
+}

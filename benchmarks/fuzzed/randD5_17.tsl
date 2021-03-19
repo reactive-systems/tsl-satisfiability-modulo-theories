@@ -1,0 +1,2 @@
+initially guarantee { G((q0a1 (f1a1  x0 )) || (G(q0a1 (f1a1  x0 ))))
+; }

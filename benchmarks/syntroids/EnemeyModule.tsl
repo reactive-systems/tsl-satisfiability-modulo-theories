@@ -1,0 +1,22 @@
+/**** enemy module specification ****
+    Description:
+        This module manages an enemys data. 
+    Inputs:
+        - "incolor", the color the enemy should have
+        - "reset", indicates if the enemy has to be reseted
+        - "resetangle", indicated to which value the enemy has to be reseted
+        - "clock", indicates the obligation to move
+    Outputs:
+        - "color"
+        - "radius"
+        - "angle"
+    Constants:
+        - "startradius" value of the radius an enemy starts with
+*/
+
+always guarantee {
+    [color <- incolor];
+    on reset <-> [radius <- startradius()];
+    on reset <-> [angle <- resetangle];
+    on clock  && !(on reset) <-> [radius <- dec radius];
+}

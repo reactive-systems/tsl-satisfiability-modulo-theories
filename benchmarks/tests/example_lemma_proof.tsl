@@ -1,0 +1,9 @@
+// The lemma example from the conclusion
+
+// This part is proving the lemma
+
+initially guarantee {
+    p x;
+    G ([x <- x] U ([x <- f x] && X (p x && [x <- x])));
+    ! G (p x);
+}

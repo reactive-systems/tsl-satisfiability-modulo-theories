@@ -1,0 +1,30 @@
+guarantee {
+
+    // The functions f1 and f2 represent programs
+  
+    // The scheduler specification
+
+    [mem <- init()];
+    [swap <- init()];
+
+    X G ([swap <- swap] || [swap <- mem]);
+    X G ([mem <- swap] || [mem <- f1 mem] || [mem <- f2 mem]);
+    
+    G ([mem <- f1 mem] -> [swap <- swap]); 
+    G ([mem <- f2 mem] -> [swap <- swap]); 
+    G ([mem <- swap] <-> [swap <- mem]);
+    
+    G ([mem <- f1 mem] && (X X [mem <- f2 mem]) -> X [swap <- mem]);
+    G ([mem <- f2 mem] && (X X [mem <- f1 mem]) -> X [swap <- mem]);
+
+    G F [mem <- f1 mem];
+    G F [mem <- f2 mem];
+
+    // Program 1 holds an invariant
+    G p init();
+    G (p mem <-> p (f1 mem));     
+    G (p mem <-> p (f2 mem));     
+
+    // Overall spec
+    ! X G (p mem && p swap);
+}

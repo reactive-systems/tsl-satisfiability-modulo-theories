@@ -1,0 +1,26 @@
+Name,Directory,Spot,Result,Time
+assumption_validation_1.tsl,OPT,UNSAT,212 ms
+assumption_validation_2.tsl,OPT,SAT,43 ms
+compound_system_verification_1.tsl,OPT,SAT,52 ms
+compound_system_verification_2.tsl,OPT,SAT,1572 ms
+eq1.tsl,OPT,UNSAT,152 ms
+eq2.tsl,OPT,UNSAT,713 ms
+eq3.tsl,OPT,UNSAT,702 ms
+example_lemma_proof.tsl,OPT,UNSAT,102 ms
+example_lemma_without.tsl,OPT,UNSAT,172 ms
+example_lemma_with.tsl,OPT,LTL-UNSAT,22 ms
+killer.tsl,OPT,TO,30001 ms
+num1.tsl,OPT,TO,30001 ms
+pass_through_arbiter_fixed.tsl,OPT,TO,30002 ms
+sat_scalability2_1.tsl,OPT,SAT,925 ms
+sat_scalability2_2.tsl,OPT,SAT,10952 ms
+sat_scalability2_3.tsl,OPT,TO,30001 ms
+sat_scalability2_4.tsl,OPT,TO,30003 ms
+test_unsat_difficult_1.tsl,OPT,TO,30003 ms
+test_unsat_difficult_2.tsl,OPT,UNSAT,163 ms
+test_unsat_difficult_3.tsl,OPT,UNSAT,333 ms
+test_unsat_normal_1.tsl,OPT,UNSAT,1273 ms
+test_unsat_normal_2.tsl,OPT,UNSAT,132 ms
+test_unsat_normal_3.tsl,OPT,UNSAT,5752 ms
+test_unsat_simple_1.tsl,OPT,UNSAT,92 ms
+test_unsat_simple_2.tsl,OPT,LTL-UNSAT,22 ms

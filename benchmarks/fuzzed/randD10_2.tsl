@@ -1,0 +1,2 @@
+initially guarantee { !(F(!(X([x0 <-  x0 ]))))
+; }

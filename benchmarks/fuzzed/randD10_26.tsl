@@ -1,0 +1,2 @@
+initially guarantee { ((X(q1a2  x1 (f2a1  x1 ))) && (G(q0a1 (f0a1  x1 )))) U ((F(q0a1 (f1a2  x2  x0 ))) U (q0a1 (f1a2  x2  x0 )))
+; }

@@ -1,0 +1,2 @@
+initially guarantee { ((F(q0a2  x2  x1 )) U (G(q0a2  x2  x1 ))) -> ([x1 <- (f2a1  x1 )])
+; }

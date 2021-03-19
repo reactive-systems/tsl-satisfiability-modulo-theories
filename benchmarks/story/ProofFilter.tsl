@@ -1,0 +1,16 @@
+initially guarantee {
+    // Input simulation
+    G [in <- f in];
+    
+    // Constant assumptions
+    G (p default());
+
+    // Filter Specification
+    [out <- default()];
+    X G ( p in -> [out <- in]);
+    X G (!p in -> [out <- out]);
+
+    // Negated output assumption
+    ! X G (p out);
+
+}

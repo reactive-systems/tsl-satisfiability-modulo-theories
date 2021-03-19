@@ -1,0 +1,22 @@
+initially guarantee {
+    // Assume we know that whenver some property p holds
+    // on some value x and y, then it also holds on f(x) and g(x,y)
+
+    G (p x -> p (f x));
+    G (p x && p y -> p (g x y));
+ 
+    // Also, we have some (abstract) specification (that can be replace by
+    // every specification implying it) yielding that in every time each cell
+    // is either updateted by applying f, g or is not changed.
+    // Furthermore we know that the property initially holds
+    G ([x <- x] || [x <- f x] || [x <- g x y]);
+    p x;
+
+    // The property always holds on the input y
+    G [y <- h y]; // <- input "simulation"
+    G (p y);
+
+    // Then we can prove that it holds forever (remark: negated assumption)
+    ! G (p x);
+
+}

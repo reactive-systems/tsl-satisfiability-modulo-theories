@@ -1,0 +1,2 @@
+initially guarantee { F(!(X(F([x2 <- (f2a1  x2 )]))))
+; }

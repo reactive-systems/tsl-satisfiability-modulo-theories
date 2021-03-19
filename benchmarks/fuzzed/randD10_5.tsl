@@ -1,0 +1,2 @@
+initially guarantee { ([x2 <- (f1a1  x2 )]) || (F(((!([x2 <- (f1a1  x2 )])) <-> (!([x2 <-  x0 ]))) R (q0a2 (f0a2  x1  x1 )(f2a2  x1  x1 ))))
+; }

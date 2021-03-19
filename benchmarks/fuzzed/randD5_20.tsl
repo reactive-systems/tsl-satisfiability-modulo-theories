@@ -1,0 +1,2 @@
+initially guarantee { F((F([x0 <- (f0a1  x0 )])) -> (q0a2 (f2a2  x0  x0 ) x0 ))
+; }

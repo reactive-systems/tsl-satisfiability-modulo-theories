@@ -1,0 +1,2 @@
+initially guarantee { ((F(G(q1a1  x0 ))) W ((([x0 <-  x0 ]) -> (([x0 <-  x0 ]) && (!([x0 <-  x0 ])) && (X(q0a1  x0 )))) R (X([x0 <-  x0 ])))) R (G(F(q1a1 (f2a1  x0 ))))
+; }

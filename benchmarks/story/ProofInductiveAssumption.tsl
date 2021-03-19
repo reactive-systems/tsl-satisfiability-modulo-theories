@@ -1,0 +1,13 @@
+initially guarantee {
+
+    // We want to validate the inductive assumption:
+    // [x <- zero()] && (X G [x <- inc(x)]) && p(zero()) && (G (p x -> p (inc x))) -> X G (p x)
+    
+    // Therefore, we check the negated assumption
+    [x <- zero()];
+    X G [x <- inc(x)];
+    G p(zero());
+    G(p x -> p (inc x));
+    ! X G (p x);
+
+}

@@ -1,0 +1,12 @@
+initially guarantee {
+    // We want to validate: 
+    // G ([x <- next x] || F [x <- restart x]) && p (inital()) -> X G ! (p x);
+
+    // Therefore, we check the negated assumption:
+
+    G ([x <- next x] || F [x <- restart x]) && p (inital());
+    ! X G ! (p x);
+
+    // => SAT means that the assumption is not valid
+    // => UNSAT means that the assumption is valid
+}

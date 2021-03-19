@@ -1,0 +1,2 @@
+initially guarantee { (q1a2 (f0a2  x0  x0 ) x1 ) <-> ((q1a2  x1 (f2a2  x0  x0 )) <-> (q1a2 (f0a2  x0  x0 ) x1 ))
+; }

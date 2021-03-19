@@ -1,0 +1,8 @@
+guarantee {
+    ||[c ELEM {_c0(), _c5(), _c10()}] equal c int_bound;
+    equal _c0() int_n;
+    G (_lt int_n int_bound -> [int_n <- _add int_n _c1()]);
+    G (_geq int_n int_bound -> [int_n <- int_n]);
+    F (_gt int_n int_bound);
+
+}

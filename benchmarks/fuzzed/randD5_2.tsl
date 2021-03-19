@@ -1,0 +1,2 @@
+initially guarantee { (q1a2  x1  x0 ) || (!(G(q1a2  x1  x0 )))
+; }

@@ -1,0 +1,23 @@
+initially guarantee {
+
+    // Input change
+    G [in1 <- f in1];
+    G [in2 <- f in2];
+
+    // Arbiter    
+    G ([out <- c1] || [out <- c2] || [out <- out]);
+
+    G ([out <- c1] -> p c1);
+    G ([out <- c2] -> p c2);
+
+    G ([c1 <- in1] <-> p in1);
+    G ([c2 <- in2] <-> p in2);
+
+    // Initial values
+    p c1;
+    p c2;
+    p out;
+    
+    // Overall property
+    ! (G (p out));
+}

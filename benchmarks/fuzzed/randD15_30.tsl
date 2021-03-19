@@ -1,0 +1,2 @@
+initially guarantee { (q0a2  x2  x2 ) && (F(G((([x0 <-  x1 ]) && (q1a2 (f0a1  x1 )(f0a1  x2 ))) <-> (X(X(q1a2 (f0a1  x1 )(f0a1  x2 )))))))
+; }

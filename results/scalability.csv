@@ -1,0 +1,25 @@
+Name,Directory,Spot,Result,Time
+sat_scalability_01.tsl,OPT,SAT,33 ms
+sat_scalability_02.tsl,OPT,SAT,72 ms
+sat_scalability_03.tsl,OPT,SAT,112 ms
+sat_scalability_04.tsl,OPT,SAT,182 ms
+sat_scalability_05.tsl,OPT,SAT,292 ms
+sat_scalability_06.tsl,OPT,SAT,452 ms
+sat_scalability_07.tsl,OPT,SAT,652 ms
+sat_scalability_08.tsl,OPT,SAT,872 ms
+sat_scalability_09.tsl,OPT,SAT,1312 ms
+sat_scalability_10.tsl,OPT,SAT,1553 ms
+sat_scalability_11.tsl,OPT,SAT,2595 ms
+sat_scalability_12.tsl,OPT,SAT,2195 ms
+sat_scalability_13.tsl,OPT,SAT,1815 ms
+sat_scalability_14.tsl,OPT,SAT,1815 ms
+sat_scalability_15.tsl,OPT,SAT,1994 ms
+unsat_scalability_1.tsl,OPT,UNSAT,92 ms
+unsat_scalability_2.tsl,OPT,UNSAT,223 ms
+unsat_scalability_3.tsl,OPT,UNSAT,562 ms
+unsat_scalability_4.tsl,OPT,UNSAT,1472 ms
+unsat_scalability_5.tsl,OPT,UNSAT,4842 ms
+unsat_scalability_6.tsl,OPT,UNSAT,23562 ms
+unsat_scalability_7.tsl,OPT,TO,60002 ms
+unsat_scalability_8.tsl,OPT,TO,60002 ms
+unsat_scalability_9.tsl,OPT,TO,60002 ms

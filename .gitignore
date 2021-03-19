@@ -1,0 +1,6 @@
+.stack-work/*
+*.swp
+stack.yaml.lock
+tslsat
+tslfuzz
+tsl2bsa

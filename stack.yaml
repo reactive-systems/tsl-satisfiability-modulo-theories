@@ -1,0 +1,7 @@
+resolver: lts-13.17
+flags: {}
+extra-deps:
+    - git: https://github.com/reactive-systems/syfco.git
+      commit: 0f0f6a6fff7960d8a0cbb120587984183fa7fc0e
+    - git: https://github.com/reactive-systems/tsltools.git
+      commit: 615c5bea7fb1c3fe491f7545d1554c500e391838

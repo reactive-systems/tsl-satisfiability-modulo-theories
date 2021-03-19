@@ -1,0 +1,8 @@
+guarantee {
+    equal x (c()); 
+    equal x y;
+    G [x <- f x];
+    G equal x (f x);
+    G [y <- f (f y)];
+    F ! equal y (c());
+}

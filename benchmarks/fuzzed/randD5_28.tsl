@@ -1,0 +1,2 @@
+initially guarantee { !(([x2 <- (f2a1  x0 )]) || (!([x2 <- (f2a1  x0 )])))
+; }

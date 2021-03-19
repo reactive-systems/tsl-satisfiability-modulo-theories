@@ -1,0 +1,2 @@
+initially guarantee { ([x2 <-  x2 ]) R (([x1 <-  x2 ]) && (q1a2 (f2a1  x1 ) x0 ))
+; }

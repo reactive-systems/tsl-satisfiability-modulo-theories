@@ -1,0 +1,18 @@
+initially guarantee {
+    // Constant assumptions
+    G ( isMode1 mode1() && !isMode1 mode2() && !isMode1 mode3());
+    G (!isMode2 mode1() &&  isMode2 mode2() && !isMode2 mode3());
+    G (!isMode3 mode1() && !isMode3 mode2() &&  isMode3 mode3());
+   
+    // Initial value assumption
+    isMode1 mode;
+    !isMode2 mode;
+    !isMode3 mode;
+ 
+    // Mode chooser specification
+    G ([mode <- mode1()] || [mode <- mode2()] || [mode <- mode3()]);
+
+    // Negated spec
+    ! G (isMode1 mode || isMode2 mode || isMode3 mode);
+ 
+}

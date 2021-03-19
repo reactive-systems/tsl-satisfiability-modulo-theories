@@ -1,0 +1,2 @@
+initially guarantee { (q0a2 (f2a1  x0 )(f0a1  x0 )) <-> ((q1a1 (f0a2  x0  x0 )) W ([x0 <- (f2a1  x0 )]))
+; }

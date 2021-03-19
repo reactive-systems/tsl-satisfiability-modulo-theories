@@ -1,0 +1,2 @@
+initially guarantee { (F(!((true) U (q1a2 (f0a1  x1 ) x2 )))) || (([x0 <- (f0a2  x2  x1 )]) -> ((G(q1a2 (f0a1  x1 ) x2 )) -> (q0a2  x1 (f0a1  x0 )))) || (!((q1a2 (f0a1  x1 ) x2 ) <-> (G(q0a2  x1 (f0a1  x0 )))))
+; }

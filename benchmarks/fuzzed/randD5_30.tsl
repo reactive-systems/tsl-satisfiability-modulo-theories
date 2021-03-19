@@ -1,0 +1,2 @@
+initially guarantee { (q1a1  x0 ) R (!(F([x0 <- (f1a2  x0  x0 )])))
+; }

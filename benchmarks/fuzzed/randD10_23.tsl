@@ -1,0 +1,2 @@
+initially guarantee { (X(!(q1a2  x0  x0 ))) -> ((!([x0 <-  x1 ])) W ([x0 <-  x1 ]))
+; }

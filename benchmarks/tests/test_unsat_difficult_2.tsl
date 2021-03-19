@@ -1,0 +1,8 @@
+initially guarantee {
+    p x;
+    p (f x);
+    [x <- x];
+    X (([x <- f x] && p (f x)) U ([x <- x] U (G ([x <- x] && !p (f x) && !(p x)))));
+    G (p (f x) -> p x);
+    // X ([x <- x] U !(p x));
+}

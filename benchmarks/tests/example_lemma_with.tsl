@@ -1,0 +1,11 @@
+// The lemma example from the conclusion
+
+// This part is checking with the lemma
+
+initially guarantee {
+    p x;
+    F ! (p x || p (f x));
+    G ([x <- x] U ([x <- f x] && X (p x && [x <- x])));
+
+    G (p x); // <- OPTIONAL LEMMA
+}

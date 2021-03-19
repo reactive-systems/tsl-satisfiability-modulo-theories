@@ -1,0 +1,2 @@
+initially guarantee { !(X(G(F((true) U (X((X([x1 <- (f0a2 x1 x0)])) U (!([x1 <- (f0a2 x1 x0)]))))))))
+; }

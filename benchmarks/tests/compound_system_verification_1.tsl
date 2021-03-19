@@ -1,0 +1,18 @@
+initially guarantee {
+    // For a composed system, with
+    // architecture: [1] - x -> [2] -> y
+    // we want to check (F p(x)) -> (F p(y))
+    
+    // System 1
+    G [x <- f x];
+    
+    // System 2
+    G(p(f(x)) -> X ([y <- x]));
+    
+    // Negated specification:
+    ! ((F p(x)) -> (F p(y)));
+
+    // => SAT means that there is some counter example
+    // => UNSAT means that all possible compound system satisfies the specification
+
+}

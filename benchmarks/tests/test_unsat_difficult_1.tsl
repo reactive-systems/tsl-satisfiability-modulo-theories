@@ -1,0 +1,17 @@
+initially guarantee {
+  G [y <- f y];
+  G (q1 y <-> q1 (f (f y)));
+  G (q2 y <-> q2 (f (f (f y))));
+  G F ! q1 y;
+  G F q1 y;
+  G F ! q2 y;
+  G F q2 y;
+
+  G F [x <- f x];
+  G F [x <- x];
+
+  !q1 y;
+   q1 x;
+  !q2 x;
+   G F (q1 x && q2 x);
+}

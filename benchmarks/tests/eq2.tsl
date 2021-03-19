@@ -1,0 +1,8 @@
+guarantee {
+    equal x y;     
+    equal y z;
+    G [x <- f x];
+    G [y <- f y];
+    G [z <- f z];
+    F ! equal x z;  
+}

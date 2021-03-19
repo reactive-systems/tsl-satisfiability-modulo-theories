@@ -1,0 +1,2 @@
+initially guarantee { (X((!(X(X(F([x0 <- (f0a2  x1  x1 )]))))) <-> (([x0 <- (f0a2  x1  x1 )]) U (F([x0 <- (f0a2  x1  x1 )]))))) R (([x0 <- (f0a2  x1  x1 )]) <-> (q1a1  x1 ))
+; }

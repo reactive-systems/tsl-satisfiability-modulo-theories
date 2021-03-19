@@ -1,0 +1,2 @@
+initially guarantee { X((q0a2  x1  x0 ) <-> (!((!(q0a2  x1  x0 )) W (q0a2  x1  x0 ))))
+; }

@@ -1,0 +1,5 @@
+initially guarantee{
+    G (q x <-> ! q (f(f(f(f(f(f(f x))))))));
+    G [x <- f x];
+    F (q x && X X X X X X X (q x));
+}

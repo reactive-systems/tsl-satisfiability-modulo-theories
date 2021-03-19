@@ -1,0 +1,31 @@
+RADARMODE = [gamemode <- radarmode()];
+COCKPITMODE = [gamemode <- cockpitmode()];
+SCOREMODE = [gamemode <- scoremode()]; 
+
+   
+always guarantee {
+
+     // These are facts over the used constants
+     isscoremode scoremode()   && !isscoremode radarmode()   && !isscoremode cockpitmode();
+    !isradarmode scoremode()   &&  isradarmode radarmode()   && !isradarmode cockpitmode();
+    !iscockpitmode scoremode() && !iscockpitmode radarmode() &&  iscockpitmode cockpitmode();
+
+   // This models the more complicated update process of the rotation with an uninterpreted function    
+    [rotation <- f rotation];
+
+    // This is shifted by one in compharision to the original module, since there we initilaized
+    // the syntesized CFM with the right value (which is not visible in the specification)
+    COCKPITMODE;
+    X (isscoremode gamemode   && lt rotation (neg gamemodeswitch()) || isradarmode gamemode && gt rotation gamemodeswitch() <-> COCKPITMODE);
+    X (iscockpitmode gamemode && lt rotation (neg gamemodeswitch()) <-> RADARMODE);
+    X (iscockpitmode gamemode && gt rotation gamemodeswitch()       <-> SCOREMODE);
+}
+
+// These are the assumtpions we want to check (in negated form of course)
+guarantee {
+    ! G (
+     (!(isscoremode gamemode     && isradarmode gamemode)) &&
+     (!(isradarmode gamemode     && iscockpitmode gamemode)) &&
+     (!(iscockpitmode gamemode   && isscoremode gamemode))
+    );
+}

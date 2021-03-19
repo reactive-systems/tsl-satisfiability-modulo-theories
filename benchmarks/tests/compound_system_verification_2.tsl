@@ -1,0 +1,31 @@
+initially guarantee {
+    // "Mutal exclusion in a distributed system"
+
+    // For a composed system, with
+    // architecture 
+    //  [1] - x -> [2] -> y
+    //  [1] - x -> [3] -> z
+    // we want to check (! ([y <- start()] && [z <- start()]))
+    
+    // System 1
+    G [cnt <- inc(cnt)];
+    byThree(cnt);
+    G (byThree(cnt) -> (!byThree(inc(cnt))) && (!byThree(inc(inc(cnt)))) && (byThree(inc(inc(inc(cnt))))));
+    G (byThree(cnt) -> [x <- one()]);
+    G ((!byThree(cnt)) -> [x <- two()]);
+    G p (one());
+    G ! p(two());
+    
+    // System 2
+    G (p x -> [y <- start()] W (! p x));
+    
+    // System 3
+    G (p x <-> [z <- idle()]);
+    G ([z <- idle()] || [z <- start()]);
+
+    // Negated specification
+    ! (! ([y <- start()] && [z <- start()]));
+
+    // => SAT means that there is some counter example
+    // => UNSAT means that all possible compound system satisfies the specification
+}

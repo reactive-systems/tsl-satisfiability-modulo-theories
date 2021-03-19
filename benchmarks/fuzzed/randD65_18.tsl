@@ -1,0 +1,2 @@
+initially guarantee { (X(X(X(!(((G(X(G(q0a1 x0)))) -> (!((F(X(X(q1a1 x0)))) R (G([x0 <- (f2a2 x0 x0)]))))) U (!((X([x0 <- (f2a2 x0 x0)])) <-> ((G((q1a1 (f1a2 x0 x0)) && (G([x0 <- (f0a2 x0 x0)])))) <-> ((q1a1 (f1a2 x0 x0)) U (!(q1a1 (f1a2 x0 x0)))))))))))) && ((((q1a1 (f1a2 x0 x0)) -> ((X(q0a1 x0)) || ((q1a1 (f1a2 x0 x0)) R ([x0 <- (f0a2 x0 x0)])))) W (([x0 <- (f0a2 x0 x0)]) || (G(q0a1 x0)) || (([x0 <- (f2a2 x0 x0)]) U (!([x0 <- (f2a2 x0 x0)]))))) -> (((q0a1 x0) R (X((q1a1 (f1a2 x0 x0)) && (q1a1 x0)))) U ((q1a1 (f1a2 x0 x0)) R (q1a1 x0))))
+; }

@@ -1,0 +1,17 @@
+initially guarantee {
+
+    // Input simulation and properties
+    G [stream <- f stream];
+    G [inject <- f inject];
+    G (p stream);
+
+    // Arbiter specification
+    G ([memory <- inject] <-> p inject);
+    G (p inject -> X F [out <- memory]);
+    G ([out <- memory] -> p memory);
+    G ([out <- memory] || [out <- stream]);
+
+    // Overall specification (negated for checking)
+    ! X G (p out);
+
+}

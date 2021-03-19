@@ -1,0 +1,2 @@
+initially guarantee { ([x0 <-  x0 ]) || (q0a1 (f1a1  x0 ))
+; }

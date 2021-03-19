@@ -1,0 +1,25 @@
+Name,Directory,Spot,Result,Time
+ActionConverter.tsl,OPT,SAT,44 ms
+Cockpitboard.tsl,TO,TO,20052 ms
+EnemeyModule.tsl,OPT,SAT,43 ms
+Gamelogic.tsl,TO,TO,20222 ms
+GamemodeChooser.tsl,OPT,SAT,1833 ms
+Gamemodule.tsl,OPT,SAT,53 ms
+LedMatrix.tsl,TO,TO,30027 ms
+Radarboard.tsl,TO,TO,20072 ms
+RegManager.tsl,OPT,SAT,42 ms
+RotationCalculator.tsl,OPT,SAT,193 ms
+Scoreboard.tsl,OPT,SAT,193 ms
+SensorInit.tsl,OPT,SAT,2303 ms
+SensorPart.tsl,TO,TO,20542 ms
+SensorRegister.tsl,OPT,SAT,23 ms
+SensorSelector.tsl,TO,TO,30028 ms
+SensorSubmodulChooser.tsl,OPT,TO,30005 ms
+Sensor.tsl,OPT,SAT,462 ms
+SPIReadClk.tsl,OPT,SAT,43 ms
+SPIReadManag.tsl,TO,TO,21585 ms
+SPIReadSdi.tsl,OPT,SAT,53 ms
+SPI.tsl,OPT,SAT,14191 ms
+SPIWriteClk.tsl,OPT,SAT,32 ms
+SPIWriteManag.tsl,OPT,TO,30002 ms
+SPIWriteSdi.tsl,OPT,SAT,62 ms

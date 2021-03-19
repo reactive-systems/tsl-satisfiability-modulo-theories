@@ -1,0 +1,23 @@
+guarantee {    
+    
+     // Input change
+    G [out1 <- f out1];
+    G [out2 <- f out2];
+
+    // Constant facts
+    G p default();
+    
+    // System Assumptions
+    G ([req1 <- on()] -> ([out <- out1] R (p out1)));
+    G ([req2 <- on()] -> ([out <- out2] R (p out2)));
+
+     // Arbiter
+    [out <- default()];
+    G ([req1 <- on()] -> F [out <- out1]);
+    G ([req2 <- on()] -> F [out <- out2]);
+
+    // Negated overall spec
+    ! X G (p out);
+
+}
+

@@ -1,0 +1,2 @@
+initially guarantee { !(X((q1a1  x0 ) && (!(q1a1 (f1a1  x0 )))))
+; }

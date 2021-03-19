@@ -1,0 +1,35 @@
+initially guarantee {
+    // Architecture:
+    // -> 1
+    //    |-> Arbiter -> output
+    // -> 2 
+
+    // Input change
+    G [in1 <- f in1];
+    G [in2 <- f in2];
+
+    // Constant facts
+    G p default();
+    
+    // System 1
+    [out1 <- default()];
+    [req1 <- off()];
+    X G ( p in1 -> [out1 <- in1]  && [req1 <- on()]);
+    X G (!p in1 -> [out1 <- out1] && [req1 <- off()]);
+    
+    // System 2
+    [out2 <- default()];
+    [req2 <- off()];
+    X G ( p in2 -> [out2 <- in2]  && [req2 <- on()]);
+    X G (!p in2 -> [out2 <- out2] && [req2 <- off()]);
+
+    // Arbiter
+
+    [out <- default()];
+    X G ([req1 <- on()] -> X F [out <- out1]);
+    X G ([req2 <- on()] -> X F [out <- out2]);
+
+    // Negated overall spec
+    ! X G (p out);
+
+}

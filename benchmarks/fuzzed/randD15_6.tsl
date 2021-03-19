@@ -1,0 +1,2 @@
+initially guarantee { (!((G(q0a1  x0 )) U (((q0a2  x0 (f0a1  x0 )) || (q0a1  x0 )) R (([x0 <-  x0 ]) || (q0a2  x0 (f0a1  x0 )))))) U ((q0a1  x0 ) <-> (q0a1  x0 ))
+; }

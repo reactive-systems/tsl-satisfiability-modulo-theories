@@ -1,0 +1,14 @@
+initially guarantee {
+    // We want to validate the assumption:
+    // [x <- zero()] && (X G [x <- inc(x)]) && p(zero()) && (G (p x -> p (inc x))) -> X G (p x)
+    
+    // Therefore, we check the negated assumption
+    [x <- zero()];
+    X G [x <- inc(x)];
+    G p(zero());
+    G(p x -> p (inc x));
+    ! (X G p x);
+
+    // => SAT means that the assumption is not valid
+    // => UNSAT means that the assumption is valid
+}

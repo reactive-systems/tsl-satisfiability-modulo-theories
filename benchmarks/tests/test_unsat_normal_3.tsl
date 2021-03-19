@@ -1,0 +1,9 @@
+initially guarantee {
+    G [x <- f x];
+    F ! p x;
+    p x;
+    p (f x);
+    p (f(f x));
+    ! p(f(f(f x)));
+    (! (X X p x)) || (! (X p x))
+}

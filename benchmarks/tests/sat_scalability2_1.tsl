@@ -1,0 +1,12 @@
+initially guarantee {
+    [x <- z()]; 
+    p x;
+    [y <- z()]; 
+    p y;
+    X G [x <- f x];
+    X G [y <- f(f(f y))];
+    G (p y -> p (f y));
+    G (p y -> p (f(f y)));
+    X F ! p x;
+    X (p y);
+}
