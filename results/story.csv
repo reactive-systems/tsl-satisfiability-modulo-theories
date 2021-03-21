@@ -1,4 +1,4 @@
-Name,Directory,Spot,Result,Time
+Name,Spot,Result,Time
 CexChain.tsl,OPT,SAT,1582 ms
 CexHoldingArbiterSmall.tsl,OPT,SAT,36364 ms
 CexHoldingArbiter.tsl,OPT,SAT,11902 ms

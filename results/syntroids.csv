@@ -1,4 +1,4 @@
-Name,Directory,Spot,Result,Time
+Name,Spot,Result,Time
 ActionConverter.tsl,OPT,SAT,44 ms
 Cockpitboard.tsl,TO,TO,20052 ms
 EnemeyModule.tsl,OPT,SAT,43 ms

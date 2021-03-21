@@ -1,4 +1,4 @@
-Name,Directory,Spot,Result,Time
+Name,Spot,Result,Time
 randD10_10.tsl,OPT,SAT,32 ms
 randD10_11.tsl,OPT,SAT,33 ms
 randD10_12.tsl,OPT,SAT,33 ms

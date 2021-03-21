@@ -13,7 +13,7 @@ messure () {
     
     # Remove the outgoing csv file and (re)initialize it
     rm -f $outfile 
-    echo "Name,Directory,Spot,Result,Time" > $outfile
+    echo "Name,Spot,Result,Time" > $outfile
 
     # Iterate over all files mesure the time (with timeout) and write
     # Result into CSV file

@@ -1,4 +1,4 @@
-Name,Directory,Spot,Result,Time
+Name,Spot,Result,Time
 assumption_validation_1.tsl,OPT,UNSAT,212 ms
 assumption_validation_2.tsl,OPT,SAT,43 ms
 compound_system_verification_1.tsl,OPT,SAT,52 ms

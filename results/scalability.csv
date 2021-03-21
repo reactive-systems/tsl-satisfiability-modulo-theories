@@ -1,4 +1,4 @@
-Name,Directory,Spot,Result,Time
+Name,Spot,Result,Time
 sat_scalability_01.tsl,OPT,SAT,33 ms
 sat_scalability_02.tsl,OPT,SAT,72 ms
 sat_scalability_03.tsl,OPT,SAT,112 ms
