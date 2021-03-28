@@ -1,14 +1,14 @@
 Name,Spot,Result,Time
-CexChain.tsl,OPT,SAT,1582 ms
-CexHoldingArbiterSmall.tsl,OPT,SAT,36364 ms
-CexHoldingArbiter.tsl,OPT,SAT,11902 ms
-ProofApproximatePassThroughArbiter.tsl,OPT,UNSAT,913112 ms
-ProofFilter.tsl,OPT,UNSAT,322 ms
-ProofGamemodechooserAssumptions.tsl,OPT,UNSAT,622 ms
-ProofInductiveAssumption.tsl,OPT,UNSAT,223 ms
-ProofInjectionArbiter.tsl,OPT,UNSAT,1563 ms
-ProofInvariantHolding.tsl,OPT,UNSAT,2362 ms
-ProofOneOfThree.tsl,OPT,UNSAT,4232 ms
-ProofOneOfTwo.tsl,OPT,UNSAT,1212 ms
-ProofPassThroughArbiter.tsl,OPT,UNSAT,55422 ms
-ProofScheduler.tsl,OPT,UNSAT,4023 ms
+CexChain.tsl,OPT,SAT,6462 ms
+CexHoldingArbiterSmall.tsl,OPT,SAT,35893 ms
+CexHoldingArbiter.tsl,OPT,SAT,11942 ms
+ProofApproximatePassThroughArbiter.tsl,OPT,UNSAT,907739 ms
+ProofFilter.tsl,OPT,UNSAT,332 ms
+ProofGamemodechooserAssumptions.tsl,OPT,UNSAT,612 ms
+ProofInductiveAssumption.tsl,OPT,UNSAT,213 ms
+ProofInjectionArbiter.tsl,OPT,UNSAT,1451 ms
+ProofInvariantHolding.tsl,OPT,UNSAT,2332 ms
+ProofOneOfThree.tsl,OPT,UNSAT,4202 ms
+ProofOneOfTwo.tsl,OPT,UNSAT,1192 ms
+ProofPassThroughArbiter.tsl,OPT,UNSAT,55843 ms
+ProofScheduler.tsl,OPT,UNSAT,3923 ms
