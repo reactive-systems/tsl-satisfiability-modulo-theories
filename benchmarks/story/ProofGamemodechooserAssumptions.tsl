@@ -15,15 +15,18 @@ always guarantee {
 
     // This is shifted by one in compharision to the original module, since there we initilaized
     // the syntesized CFM with the right value (which is not visible in the specification)
-    COCKPITMODE;
     X (isscoremode gamemode   && lt rotation (neg gamemodeswitch()) || isradarmode gamemode && gt rotation gamemodeswitch() <-> COCKPITMODE);
     X (iscockpitmode gamemode && lt rotation (neg gamemodeswitch()) <-> RADARMODE);
     X (iscockpitmode gamemode && gt rotation gamemodeswitch()       <-> SCOREMODE);
 }
 
+guarantee {
+    COCKPITMODE;
+}
+
 // These are the assumtpions we want to check (in negated form of course)
 guarantee {
-    ! G (
+    ! X G (
      (!(isscoremode gamemode     && isradarmode gamemode)) &&
      (!(isradarmode gamemode     && iscockpitmode gamemode)) &&
      (!(iscockpitmode gamemode   && isscoremode gamemode))
