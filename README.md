@@ -25,7 +25,7 @@ Perquisites:
 
 To build the project, simply call ``make`` in the top-level folder.
 If you want to install the tools locally (no root required!), call ``make install``.
-Note that for ``tsl2bsa`` and ``tsltusat`` to qork properly, spots ``ltl2tgba`` and ``randltl`` have to be in your ``$PATH``.
+Note that for ``tsl2bsa`` and ``tsltusat`` to work properly, spots ``ltl2tgba`` and ``randltl`` have to be in your ``$PATH``.
 
 To see how exactly each tools is called, call it without any arguments.
 
