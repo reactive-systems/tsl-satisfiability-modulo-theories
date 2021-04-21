@@ -1,6 +1,6 @@
 name:                tsl-sat
 version:             1.0.0.0
-license:             MIT
+license:             AGPL
 license-file:        LICENSE
 author:              Philippe Heim <heim@react.uni-saarland.de>
 maintainer:          Philippe Heim <heim@react.uni-saarland.de>
